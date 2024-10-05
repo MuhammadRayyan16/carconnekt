@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Car Connekt | Lets Ride</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+   <div class="header">
+      <div class="container">
+         <img src="./img/logo.png">
+         <div class="items">
+            <a href="./">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./vechile-models.html">Vehicle Models</a>
+            <a href="./testimonials.html">Testimonials</a>
+            <a href="./contact.html">Contact</a>
+            <button>Log In</button>
+         </div>
+         <div class="menu-icon" onclick="toggle()">
+            <img
+               src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e">
+         </div>
+      </div>
+   </div>
+
+   <div class="menu-box">
+      <button>Log In</button>
+      <a href="./">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./vechile-models.html">Vechile Models</a>
+      <a href="./testimonials.html">Testimonials</a>
+      <a href="./contact.html">Contact</a>
+   </div>
+
+   <div class="section-1">
+      <div class="left">
+         <h2>Experience the ride of your dreams with <span>no additional fees.</span></h2>
+         <p>Car Connekt is a premium car rental service currently operating out of 26 Cities across North America.</p>
+         <p>Join thousands of Canadians experiencing our unbeatable prices, unlimited kilometers, flexible pick-up
+            options, and more.</p>
+         <button>Book your ride today</button>
+      </div>
+      <div class="right">
+         <div>
+            <p><i class="fa-solid fa-building"></i> 26 locations</p>
+            <p><i class="fa-solid fa-key"></i> 300+ rentals</p>
+            <p><i class="fa-solid fa-car"></i> Unlimited distance</p>
+         </div>
+         <img src="./img/Car-Hero.png">
+      </div>
+   </div>
+
+   <div class="form">
+      <div class="container">
+         <h3>Plan your trip:</h3>
+         <div>
+            <span>
+               <p><i class="fa-solid fa-car pe-2"></i> Select Yor Car</p>
+               <select>
+                  <option value="1">Tesla Model 3</option>
+                  <option value="2">Honda Accord</option>
+                  <option value="3">Jeep Wrangler</option>
+                  <option value="4">Ford F-350</option>
+                  <option value="5">Mini Cooper S</option>
+                  <option value="6">Nissan Sentra</option>
+                  <option value="7">Volkswagen Golf Mk8</option>
+                  <option value="8">Audi E-Tron</option>
+               </select>
+            </span>
+            <span>
+               <p><i class="fa-solid fa-location-pin pe-2"></i> Pick-Up Location</p>
+               <select>
+                  <option value="1">Toronto</option>
+                  <option value="2">Brampton</option>
+                  <option value="3">Thunder Bay</option>
+                  <option value="4">Calgary</option>
+                  <option value="5">Victoria</option>
+                  <option value="6">Ottawa</option>
+               </select>
+            </span>
+            <span>
+               <p><i class="fa-solid fa-location-pin pe-2"></i> Drop-Off Location</p>
+               <select>
+                  <option value="1">Toronto</option>
+                  <option value="2">Brampton</option>
+                  <option value="3">Thunder Bay</option>
+                  <option value="4">Calgary</option>
+                  <option value="5">Victoria</option>
+                  <option value="6">Ottawa</option>
+               </select>
+            </span>
+            <span>
+               <p><i class="fa-solid fa-calendar-days pe-2"></i> Departure Date</p>
+               <input type="date">
+            </span>
+            <span>
+               <p><i class="fa-solid fa-calendar-days pe-2"></i> Arrival Date</p>
+               <input type="date">
+            </span>
+            <span>
+               <button>Book Now</button>
+            </span>
+         </div>
+      </div>
+   </div>
+
+   <div class="section-2">
+      <h2>Our Top Rentals</h2>
+      <p>Choose from a variety of our amazing vehicles to rent for your next business trip or adventure</p>
+      <div class="main">
+         <div class="cars">
+            <button onclick="changeCar('tesla-model-3', 52, 'Tesla', 'Model 3', '2022', 'Automatic', 4)">Tesla Model
+               3</button>
+            <button onclick="changeCar('honda-accord', 38, 'Honda', 'Accord', '2022', 'Automatic', 4)">Honda
+               Accord</button>
+            <button onclick="changeCar('jeep-wrangler', 42, 'Jeep', 'Wrangler', '2021', 'Automatic', 2)">Jeep
+               Wrangler</button>
+            <button onclick="changeCar('ford-f-350', 45, 'Ford', 'F-350', '2021', 'Automatic', 2)">Ford
+               F-350</button>
+            <button onclick="changeCar('mini-cooper-S', 42, 'Mini', 'Cooper S', '2022', 'Manual', 2)">Mini Cooper
+               S</button>
+            <button onclick="changeCar('nissan-sentra', 40, 'Nissan', 'Sentra', '2020', 'Automatic', 4)">Nissan
+               Sentra</button>
+            <button
+               onclick="changeCar('volkswagen-golf-mk8', 42, 'Volkswagen', 'MK8', '2022', 'Automatic', 4)">Volkswagen
+               Golf Mk8</button>
+            <button onclick="changeCar('audi-e-tron', 49, 'Audi', 'E-Tron', '2023', 'Automatic', 4)">Audi
+               E-Tron</button>
+         </div>
+         <div class="image">
+            <img src="./img/tesla-model-3.png" alt="">
+         </div>
+         <div class="info">
+            <h4><i class="fa-solid fa-dollar-sign pe-1"></i><span> 52/day</span></h4>
+            <div class="make">
+               <p>Make</p>
+               <p>Tesla</p>
+            </div>
+            <div class="model">
+               <p>Model</p>
+               <p>Model 3</p>
+            </div>
+            <div class="year">
+               <p>Year</p>
+               <p>2022</p>
+            </div>
+            <div class="transmission">
+               <p>Transmission</p>
+               <p>Automatic</p>
+            </div>
+            <div class="doors">
+               <p>Doors</p>
+               <p>4</p>
+            </div>
+            <button>Reserve Now</button>
+         </div>
+      </div>
+   </div>
+
+   <div class="section-3">
+      <h2>Save big with Car Connekt</h2>
+      <p>Cheapest rates. Local Suppliers. <span>24/7</span> support.</p>
+   </div>
+
+   <div class="section-4">
+      <p>Plan your trip today</p>
+      <h2>Fast and Effortless Rentals</h2>
+      <div class="cards">
+         <div>
+            <img src="./img/1.png" alt="">
+            <h3>Select your Car</h3>
+            <p>We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs
+            </p>
+         </div>
+         <div>
+            <img src="./img/2.png" alt="">
+            <h3>24/7 Operators</h3>
+            <p>Our knowledgeable and friendly operators are always ready to help with any questions or concerns
+            </p>
+         </div>
+         <div>
+            <img src="./img/3.png" alt="">
+            <h3>Unlimited Distance</h3>
+            <p>Whether you're hitting the open road, we've got you covered with our wide range of cars
+            </p>
+         </div>
+      </div>
+      <img src="./img/fleet.png" alt="">
+   </div>
+
+   <div class="section-5">
+      <div class="container">
+         <div class="left">
+            <h5>Why Choose Car Connekt?</h5>
+            <h1>The <span>best</span> deals you will ever find.</h1>
+            <p>Discover the best deals you'll ever find with our unbeatable offers. We're dedicated to providing you
+               with the best value for your money, so you can enjoy top-quality services and products without breaking
+               the bank. Our deals are designed to give you the ultimate renting experience, so don't miss out on your
+               chance to save big.</p>
+            <button>Find out more ></button>
+         </div>
+         <div class="right">
+            <div class="box">
+               <img src="./img/box-1.png" alt="">
+               <div>
+                  <h2>Cross Country Drive</h2>
+                  <p>Take your driving experience to the next level with our top-notch vehicles for your
+                     cross-country
+                     adventures.</p>
+               </div>
+            </div>
+            <div class="box">
+               <img src="./img/box-2.png" alt="">
+               <div>
+                  <h2>All Inclusive Pricing</h2>
+                  <p>Get everything you need in one convenient, transparent price with our all-inclusive pricing
+                     policy.</p>
+               </div>
+            </div>
+            <div class="box">
+               <img src="./img/box-3.png" alt="">
+               <div>
+                  <h2>No Hidden Fees</h2>
+                  <p>Enjoy peace of mind with our no hidden charges policy. We believe in transparent and honest
+                     pricing.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="section-6">
+      <h1>Client Testimonials</h1>
+      <h6>See what our clients are saying about us!</h6>
+      <p>Discover the positive impact we've made on the our clients by reading through their testimonials. Our clients
+         have experienced our service and results, and they're eager to share their positive experiences with you.</p>
+      <div class="boxes">
+         <div>
+            <p>Car Connekt is my go-to when looking for a rental. Their prices are unbeatable, I don't think I'd ever go
+               back to the others. With a large selection of inventory, there's so many wonderful vehicles to choose
+               from. Thank you Car Connekt!</p>
+            <h5>Janice P.</h5>
+            <h4>Toronto, ON</h4>
+            <img src="./img/feedback.png" alt="">
+         </div>
+         <div>
+            <p>I'm impressed with how easy Car Connekt is to use. The user interface is intuitive and user-friendly,
+               making it a breeze to navigate. I highly recommend the Car Connekt app to anyone looking for a quick,
+               clean and cheap rental!</p>
+            <h5>Jonatan L.</h5>
+            <h4>Ottawa, ON</h4>
+            <img src="./img/feedback.png" alt="">
+         </div>
+      </div>
+   </div>
+
+   <div class="section-7">
+      <div class="left">
+         <h1>Get the <span>most</span> out of Car Connekt</h1>
+         <p>The Car Connekt app offers an unparalleled driving experience. Our innovative features allow you to stay
+            connected while on the go, keeping you safe and informed. Download the app today and get the most out of
+            your driving experience.</p>
+         <div>
+            <span>
+               <img src="./img/app-store.png" alt="">
+            </span>
+            <span>
+               <img src="./img/google-store.png" alt="">
+            </span>
+         </div>
+      </div>
+      <div class="right">
+         <img src="./img/app.png" alt="">
+      </div>
+   </div>
+
+   <div class="footer">
+      <div class="left">
+         <div>
+            <img src="./img/logo.png" alt="">
+            <h6>The cheapest, easiest car rental service</h6>
+            <span>
+               <p class="p"><i class="special-text fa-solid fa-phone pe-1"></i> (416) 778-0018</p>
+               <p class="p"><i class="fa-solid fa-envelope pe-1"></i> info@carconnekt.ca</p>
+               <p>designed by syrussamson.ca</p>
+            </span>
+         </div>
+         <div>
+            <h3><i class="fa-solid fa-building pe-1"></i> Branches</h3>
+            <span>
+               <p>Toronto</p>
+               <p>Thunder Bay</p>
+               <p>Calgary</p>
+               <p>Victoria</p>
+            </span>
+            <h3><i class="fa-solid fa-suitcase pe-1"></i> Careers</h3>
+         </div>
+      </div>
+      <div class="right">
+         <div>
+            <span>
+               <h3><i class="fa-solid fa-clock pe-1 "></i> Working Hours</h3>
+               <span>
+                  <p>Mon - Fri:</p>
+                  <p>8am - 8pm</p>
+               </span>
+               <span>
+                  <p>Sat:</p>
+                  <p>9am - 5pm</p>
+               </span>
+               <span>
+                  <p>Sun:</p>
+                  <p>Closed</p>
+               </span>
+            </span>
+         </div>
+         <div>
+            <h3><i class="fa-solid fa-envelope pe-1"></i> Subscribe</h3>
+            <p>weekly newsletter with promotions. opt out at any time.</p>
+            <span>
+               <input type="email" placeholder="enter your email" class="footer-input">
+               <button class="footer-button">Submit</button>
+            </span>
+         </div>
+      </div>
+   </div>
+
+   <div class="sbs-box">
+      <p></p>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
